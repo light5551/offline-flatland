@@ -1,0 +1,25 @@
+{
+    "name": "offline_flatland",
+    "dockerComposeFile": [ "../../docker-compose.yml" ],
+    "service": "offline_flatland",
+    "runServices": [ "offline_flatland" ],
+    "workspaceFolder": "/home/user/offline_flatland",
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "terminal.integrated.defaultProfile.linux": "bash",
+                "terminal.integrated.profiles.linux": { "bash": { "path": "/usr/bin/bash" } },
+                "terminal.integrated.cwd": "/home/user/offline_flatland"
+            },
+            "extensions": [
+                "ms-python.python",
+                "charliermarsh.ruff",
+                "KevinRose.vsc-python-indent",
+                "oderwat.indent-rainbow",
+                "tamasfe.even-better-toml",
+                "ms-azuretools.vscode-docker",
+                "DavidAnson.vscode-markdownlint"
+            ]
+        }
+    }
+}

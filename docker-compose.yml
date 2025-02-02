@@ -1,0 +1,22 @@
+version: '3'
+services:
+  offline_flatland:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    environment:
+      DISPLAY: $DISPLAY
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix
+      - ~/.Xauthority:/root/.Xauthority
+      - .:/home/user/offline_flatland:cached
+    network_mode: host
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [ gpu ]
+    command: sleep infinity
+    container_name: offline_flatland_docker
