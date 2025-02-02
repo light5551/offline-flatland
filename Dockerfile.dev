@@ -14,10 +14,11 @@ RUN groupadd --gid $USER_GID $USERNAME \
     && chmod 0440 /etc/sudoers.d/$USERNAME
 
 RUN apt update || true && apt install -q -y --no-install-recommends \
+    freeglut3-dev \
     bash-completion \
     gnupg2 \
     cmake \
-    curl
+    curl 
 
 RUN pip install -U pip
 

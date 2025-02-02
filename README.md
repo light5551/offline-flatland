@@ -15,3 +15,8 @@
 ## Usage 
 
 1. `python3 /home/user/offline_flatland/src/offline_flatland/demo_flatland.py`
+
+
+## How to check?
+
+1. Run vizualization in terminal: `flatland-demo`
