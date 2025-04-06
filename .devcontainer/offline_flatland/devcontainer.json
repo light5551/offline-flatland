@@ -1,15 +1,15 @@
 {
-    "name": "offline_flatland",
+    "name": "offline_highway",
     "dockerComposeFile": [ "../../docker-compose.yml" ],
-    "service": "offline_flatland",
-    "runServices": [ "offline_flatland" ],
-    "workspaceFolder": "/home/user/offline_flatland",
+    "service": "offline_highway",
+    "runServices": [ "offline_highway" ],
+    "workspaceFolder": "/home/user/offline_highway",
     "customizations": {
         "vscode": {
             "settings": {
                 "terminal.integrated.defaultProfile.linux": "bash",
                 "terminal.integrated.profiles.linux": { "bash": { "path": "/usr/bin/bash" } },
-                "terminal.integrated.cwd": "/home/user/offline_flatland"
+                "terminal.integrated.cwd": "/home/user/offline_highway"
             },
             "extensions": [
                 "ms-python.python",

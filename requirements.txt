@@ -2,3 +2,4 @@ numpy==1.25
 gymnasium==0.29.0
 flatland-rl==4.0.3
 minari[all]==0.5.2
+highway-env
